@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-        <meta charset="utf-8">
-        <title>Fóoldal</title>   
-        <link rel="stylesheet" href="style.css">   
-    </head> 
-    <body>
-        <?php include ("fejlec.html");?>
+<?php
+include('./includes/config.inc.php');
 
-       <?php 
-       if (isset($_GET['oldal'])){
-        if($_GET['oldal']=="kapcsolat") include("kapcsolat_tartalom.html");
-        if($_GET['oldal']=="termekek") include("termekek_tartalom.html");
-       }
-       else include("fooldal_tartalom.html");
-
-       ?>
-    </body>
-</html>
+//$keres = current($oldalak);
+$keres = $oldalak['/'];
+if (isset($_GET['oldal'])) {
+	if (isset($oldalak[$_GET['oldal']]) && file_exists("./templates/pages/{$oldalak[$_GET['oldal']]['fajl']}.tpl.php")) {
+		$keres = $oldalak[$_GET['oldal']];
+	}
+	else { 
+		$keres = $hiba_oldal;
+		header("HTTP/1.0 404 Not Found");
+	}
+}
+include('./templates/index.tpl.php'); 
+?>
