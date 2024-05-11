@@ -6,7 +6,8 @@ $ablakcim = array(
 $fejlec = array(
 	'cim' => 'SneakElite',
 	'cim2' => 'Termékek',
-    'cim3' => 'Kapcsolat'
+    'cim3' => 'Kapcsolat',
+    'cim4' => 'Panaszok'
 );
 
 $lablec = array(
@@ -16,6 +17,7 @@ $lablec = array(
 
 $oldalak = array(
     '/' => array('fajl' => 'cimlap', 'szoveg' => '', 'menun' => array(1,1)),
+    'uzenetek' => array('fajl' => 'uzenetek', 'szoveg' => '', 'menun' => array(1,1)),
     'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => '', 'menun' => array(1,0)),
     'termekek' => array('fajl' => 'termekek', 'szoveg' => '', 'menun' => array(1,0)),
     'belepes' => array('fajl' => 'belepes', 'szoveg' => '', 'menun' => array(1,0)),

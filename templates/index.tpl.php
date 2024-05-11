@@ -16,10 +16,11 @@
             <li id="SneakElite"><a href="index.php"> <span id="szin"><?= $fejlec['cim'] ?></span></a></li>
             <li> <a href="index.php?oldal=termekek" ><?= $fejlec['cim2'] ?></a></li>
             <li><a href="index.php?oldal=kapcsolat" > <?= $fejlec['cim3'] ?></a></li>
+            <li><a href="index.php?oldal=uzenetek"><?= $fejlec['cim4'] ?></a></li>
             <li id="belepes">
 			<?php if(isset($_SESSION['login'])) { ?>
 <?php } else { ?>
-    <a href="http://localhost/beadando3/index.php?oldal=belepes" class="gomb">
+    <a href="index.php?oldal=belepes" class="gomb">
         <button type="button"> Belépés </button>
     </a>
 <?php } ?>
@@ -33,7 +34,7 @@
          </ul>
          <hr noshade id="vonal">
     </div>
-		<?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?>
+		<?php if(isset($_SESSION['login'])) { ?>Bejelentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?>
 	</header>
     <div id="wrapper">
         <aside id="nav">
