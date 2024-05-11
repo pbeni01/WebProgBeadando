@@ -81,3 +81,99 @@ margin-left: -5px;
 #reg{
     margin-right: -60px;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: green;
+    color: white;
+}
+#jelentkezzbe{
+    color: green;
+    text-align: center;
+    font-size: 60px;
+}
+label{
+    padding-left: 30px;
+}
+input{
+    padding: 5px;
+    margin-top: 50px;
+}
+#Kemail{
+    padding-right: 45px;
+    font-size: x-large;
+    font-weight: bold;
+}
+#Knev{
+    padding-right: 69px;
+    font-size: x-large;
+    font-weight: bold;
+}
+#Kphone{
+    padding-right: 3px;
+    font-size: x-large;
+    font-weight: bold;
+}
+#szoveg{
+    margin-top: 20px;
+}
+#megjegyzestext{
+    margin-top: 60px;
+    padding-left: 0px;
+}
+#urlap{
+text-align: center;
+}
+#kuld{
+    background-color: green;
+    color: white;
+    border-radius:5px;
+    border: 5px solid green;
+}
+#belep{
+    background-color: green;
+    color: white;
+    border-radius:5px;
+    border: 5px solid green;
+}
+#register{
+    background-color: green;
+    color: white;
+    border-radius:5px;
+    border: 5px solid green;
+}
+.reglog{
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+.sneaker-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sneaker {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sneaker img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .sneaker {
+        width: calc(33.33% - 20px);
+    }
+}
