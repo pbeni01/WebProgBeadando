@@ -6,8 +6,6 @@ window.onload = function()
 function ellenoriz() 
 {
 var rendben = true;
-
-
 var szoveg = document.getElementById("szoveg");
 if (szoveg) { 
     if (szoveg.value.length==0) { // ha üresen hagytuk az üzenetet
@@ -33,8 +31,6 @@ if (nev) {
 } else {
 }
 }
-    
-
 var telefon = document.getElementById("phone");
 if (telefon) {
     if (telefon.value.length<11 ||telefon.value.length>11) { 
@@ -42,7 +38,6 @@ if (telefon) {
 } else {
 }
 }
-
 var kuld = document.getElementById("kuld");
 if (kuld) {
 kuld.disabled = !rendben;

@@ -45,8 +45,7 @@ try {
 else{}
 }
 catch (PDOException $e) {
-    $uzenet = "Hiba: ".$e->getMessage();
-    $ujra = true;
+    echo "Hiba: ";
 }   
 }
 
