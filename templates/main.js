@@ -26,11 +26,22 @@ if(email){
 } else {
 }
 }
-
 var nev = document.getElementById("nev");
+if (nev) {
+    if (nev.value.length<5) { 
+    rendben = false;
+} else {
+}
+}
+    
 
-
-var nev = document.getElementById("phone");
+var telefon = document.getElementById("phone");
+if (telefon) {
+    if (telefon.value.length<11 ||telefon.value.length>11) { 
+    rendben = false;
+} else {
+}
+}
 
 var kuld = document.getElementById("kuld");
 if (kuld) {
